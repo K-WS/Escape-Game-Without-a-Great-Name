@@ -1,6 +1,7 @@
 package gameEngine;
 
 import roomStructure.Room;
+import roomStructure.Prop;
 
 public class Saver {
 	private String savesPath;

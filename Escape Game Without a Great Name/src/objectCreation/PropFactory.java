@@ -2,6 +2,8 @@ package objectCreation;
 
 import java.io.File;
 
+import roomStructure.Prop;
+
 public class PropFactory {
 	private int[] existingIds;
 	

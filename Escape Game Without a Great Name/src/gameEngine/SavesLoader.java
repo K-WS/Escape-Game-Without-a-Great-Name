@@ -1,5 +1,6 @@
 package gameEngine;
 
+import roomStructure.Prop;
 import roomStructure.Room;
 
 public class SavesLoader {

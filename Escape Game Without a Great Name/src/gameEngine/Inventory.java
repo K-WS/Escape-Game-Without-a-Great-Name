@@ -1,5 +1,8 @@
 package gameEngine;
 
+import roomStructure.DynamicProp;
+import roomStructure.Prop;
+
 public class Inventory implements Clickable{
 	private DynamicProp[] slots;
 	private int[] stack;
