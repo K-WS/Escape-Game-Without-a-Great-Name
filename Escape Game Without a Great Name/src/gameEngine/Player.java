@@ -1,5 +1,7 @@
 package gameEngine;
 
+import roomStructure.Room;
+
 public class Player {
 	private String name;
 	private Room currentLocation;

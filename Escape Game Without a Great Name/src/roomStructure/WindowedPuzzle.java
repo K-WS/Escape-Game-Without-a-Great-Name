@@ -1,4 +1,6 @@
-package gameEngine;
+package roomStructure;
+
+import gameEngine.Clickable;
 
 //comment: checkpoints.length() == 1
 public class WindowedPuzzle extends Puzzle implements Clickable{

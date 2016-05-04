@@ -1,5 +1,8 @@
 package gameEngine;
 
+import objectCreation.RoomFactory;
+import roomStructure.Room;
+
 public class GameEngine {
 	private static Saver saver;
 	private static RoomFactory factory;

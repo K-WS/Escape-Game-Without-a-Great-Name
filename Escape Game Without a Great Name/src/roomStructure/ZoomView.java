@@ -1,22 +1,20 @@
-package gameEngine;
+package roomStructure;
 
 import java.util.HashMap;
-//comment:  
-//subID == Room
-//.viewPoints
-//.indexOf(this)
-public class ViewPoint implements Clickable{
-	
+
+import gameEngine.Clickable;
+
+public class ZoomView extends ViewPoint{
 	//HashMap<int, Clickable>
 	private HashMap<Integer, Clickable> members;
 	//HashMap<int, int[]>
 	private HashMap<Integer, Integer[]> locations;
 	private int subID;
+	private ViewPoint parent;
 	
 	public void Load(){}
-	
-	@Override
 	public void React(){}
+	
 	
 	
 }

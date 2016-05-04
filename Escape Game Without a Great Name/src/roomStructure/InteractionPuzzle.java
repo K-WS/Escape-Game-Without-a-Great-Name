@@ -1,4 +1,4 @@
-package gameEngine;
+package roomStructure;
 
 import java.util.HashMap;
 
