@@ -7,7 +7,7 @@ public class DynamicInventoryState extends DynamicState {
 	
 	
 	@Override
-	public void pickUp() { /*owner.enterState(owner.dragState);*/ }
+	public void pickUp() { /*owner.enterState(owner.activeState);*/ }
 
 	@Override
 	public void putDown() { /* do nothing */ }

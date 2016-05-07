@@ -1,12 +1,10 @@
 package stateMachine;
 
 public class DynamicIdleState extends DynamicState {
-
-	private double[] location;
 	
 	@Override
 	public void pickUp() 
-	{ /* owner.enterState(dragState); */ }
+	{ /* owner.enterState(inventoryState); */ }
 
 	@Override
 	public void putDown() { /* do nothing */ }
