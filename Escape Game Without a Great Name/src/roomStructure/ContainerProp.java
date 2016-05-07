@@ -35,4 +35,10 @@ public class ContainerProp extends Prop {
 		else accessible = true;
 	}
 
+	@Override
+	public void React() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

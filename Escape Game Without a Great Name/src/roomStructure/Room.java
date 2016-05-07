@@ -1,5 +1,7 @@
 package roomStructure;
 
+import java.util.ArrayList;
+
 //comment: 
 //direction == 1
 //-> right
@@ -8,11 +10,15 @@ package roomStructure;
 public class Room {
 	private int ID;
 	//ViewPoint[4]
-	private ViewPoint[] viewPoints;
+	private ArrayList<ViewPoint> viewPoints;
+	private ViewPoint currentViewPoint;
+	public ViewPoint getCurrentViewPoint() {return currentViewPoint;}
 	
 	
 	public void Load(){}
 	public void unLoad(){}
 	public void nextViewPoint(int direction){}
+	
+	
 
 }

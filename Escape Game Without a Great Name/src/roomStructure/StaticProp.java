@@ -9,16 +9,13 @@ public class StaticProp extends Prop implements Switchable{
 	private StaticState currentState;
 	private ContainerProp container;
 
-	public StaticProp(int ID, Puzzle puzzle, Puzzle condition) {
+	public StaticProp(int ID, Puzzle puzzle, Puzzle condition) 
+	{
 		super(ID, puzzle, condition);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
-	public void Load() {
-		// TODO Auto-generated method stub
-
-	}
+	public void Load() {}
 
 	@Override
 	public void enterState(State newState) {
@@ -40,5 +37,8 @@ public class StaticProp extends Prop implements Switchable{
 		stateLocked = false;
 		
 	}
+
+	@Override
+	public void React() {}
 
 }

@@ -7,6 +7,12 @@ public class InteractionPuzzle extends Puzzle{
 	private HashMap<Integer, Integer[]> checkpointDestinations;
 
 	public void locationChanged(Prop checkpoint){}
+
+	@Override
+	public void completeCheckpoint(int index) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 

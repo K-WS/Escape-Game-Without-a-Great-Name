@@ -1,6 +1,6 @@
 package roomStructure;
 
-import stateMachine.DynamicDragState;
+import stateMachine.DynamicActiveState;
 import stateMachine.DynamicIdleState;
 import stateMachine.DynamicInventoryState;
 import stateMachine.DynamicState;
@@ -11,21 +11,26 @@ public class DynamicProp extends Prop implements Switchable{
 	private boolean stateLocked;
 	private DynamicState currentState;
 	
+	@SuppressWarnings("unused")
 	private ContainerProp container;
 	
 	public DynamicInventoryState inventoryState;
-	public DynamicDragState dragstate;
+	public DynamicActiveState activeState;
 	public DynamicIdleState idleState;
 	
-	public DynamicProp(int ID, Puzzle puzzle, Puzzle condition) {
+	public DynamicProp(int ID, Puzzle puzzle, Puzzle condition, ContainerProp container) 
+	{
 		super(ID, puzzle, condition);
-		// TODO Auto-generated constructor stub
+		this.container = container;
+		inventoryState = new DynamicInventoryState();
+		activeState = new DynamicActiveState();
+		idleState = new DynamicIdleState();
 	}
 
 	@Override
 	public void Load() 
 	{
-		// TODO Auto-generated method stub
+		// Making prop visible / interactable
 	}
 
 	public void enterState(State newState) 
@@ -34,14 +39,11 @@ public class DynamicProp extends Prop implements Switchable{
 			currentState = (DynamicState)newState;
 	}
 
-	public void lockState() 
-	{
-		stateLocked = true;		
-	}
+	public void lockState() { stateLocked = true; }
 
-	public void unlockState() 
-	{
-		stateLocked = false;
-	}
+	public void unlockState() { stateLocked = false; }
+	
+	@Override
+	public void React() { }
 
 }
