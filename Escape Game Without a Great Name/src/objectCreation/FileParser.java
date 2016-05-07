@@ -2,7 +2,6 @@ package objectCreation;
 
 import java.io.File;
 import java.util.HashMap;
-import java.util.Scanner;
 
 public class FileParser{
 	private HashMap<String, File> dataFiles;
@@ -22,18 +21,9 @@ public class FileParser{
 		return null;
 		}
 	public String[] parseXProps(int x){return null;}
-	public String[] parseAllProps() throws Exception{
-		
-		Scanner sc = new Scanner(dataFiles.get("props"));
-		while(sc.hasNextLine()){
-			System.out.println(sc.nextLine());
-		}
-		
-		sc.close();
-	
-	}
+	public String[] parseAllProps() { return null; }
 	public File loadPictureFromFile(String filename){return null;}
 
 	
-	//id, objekti_nimi, ruum, ruumikÃ¼lg, alamvaade?, x, y, static/dynamic, pildifaili asukoht.
+	//id, objekti_nimi, ruum, ruumikülg, alamvaade?, x, y, static/dynamic, pildifaili asukoht.
 }
