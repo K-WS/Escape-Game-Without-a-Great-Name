@@ -7,6 +7,8 @@ import java.util.ArrayList;
 //-> right
 //direction == -1
 //-> left
+
+@SuppressWarnings("unused")
 public class Room {
 	private int ID;
 	//ViewPoint[4]

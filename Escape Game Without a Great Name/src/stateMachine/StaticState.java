@@ -1,11 +1,28 @@
 package stateMachine;
 
+import javafx.scene.image.Image;
 import roomStructure.StaticProp;
 
+@SuppressWarnings("unused")
 public class StaticState extends State 
 {
 	private StaticState firstInList;
 	private StaticState nextInList;
+	public StaticState getNextInList() {
+		return nextInList;
+	}
+	
+	public void setFirstInList(StaticState firstInList) {
+		this.firstInList = firstInList;
+	}
+	
+	public StaticState(String image, StaticState next, StaticProp owner) {
+
+		this.owner = owner;
+		nextInList = next;
+		imageRepresentation = image;
+		imageRepresentation2 = new Image(image);
+	}
 	
 	public void next()
 	{

@@ -4,6 +4,7 @@ import gameEngine.Clickable;
 import javafx.scene.Group;
 
 //comment: checkpoints.length() == 1
+@SuppressWarnings("unused")
 public class WindowedPuzzle extends Puzzle implements Clickable{
 	
 	private Group frame;
