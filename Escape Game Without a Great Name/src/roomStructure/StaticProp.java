@@ -12,7 +12,8 @@ public class StaticProp extends Prop implements Switchable{
 	private StaticState currentState;
 	private ContainerProp container;
 
-	public StaticProp(int ID, Puzzle puzzle, Puzzle condition, String[] filenamesReversed, ContainerProp container, boolean locked, boolean invisible) 
+	public StaticProp(String ID, Puzzle puzzle, Puzzle condition, String[] filenamesReversed, 
+						ContainerProp container, boolean locked, boolean invisible) 
 	{
 		super(ID, puzzle, condition);
 		this.container = container;
@@ -22,11 +23,7 @@ public class StaticProp extends Prop implements Switchable{
 	@Override
 	public void Load() 
 	{
-//		this.setStyle(
-//				  "-fx-background-image: url('"+currentState.getImageRepresentation()+"'); -fx-background-size: 95, 75"
-//		);
-		this.setImage(currentState.getImageRepresentation2());
-		
+		this.setImage(currentState.getImageRepresentation());
 	}
 
 	@Override

@@ -3,7 +3,6 @@ package stateMachine;
 import javafx.scene.image.Image;
 import roomStructure.StaticProp;
 
-@SuppressWarnings("unused")
 public class StaticState extends State 
 {
 	private StaticState firstInList;
@@ -20,8 +19,7 @@ public class StaticState extends State
 
 		this.owner = owner;
 		nextInList = next;
-		imageRepresentation = image;
-		imageRepresentation2 = new Image(image);
+		imageRepresentation = new Image(image);
 	}
 	
 	public void next()

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class ContainerProp extends Prop {
 	
-	public ContainerProp(int ID, Puzzle puzzle, Puzzle condition) {
+	public ContainerProp(String ID, Puzzle puzzle, Puzzle condition) {
 		super(ID, puzzle, condition);
 		// TODO Auto-generated constructor stub
 	}

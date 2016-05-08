@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 @SuppressWarnings("unused")
 public class Room {
-	private int ID;
+	private String ID;
 	//ViewPoint[4]
 	private ArrayList<ViewPoint> viewPoints;
 	private ViewPoint currentViewPoint;

@@ -6,7 +6,7 @@ import javafx.scene.image.ImageView;
 
 public abstract class Prop extends javafx.scene.image.ImageView implements Clickable
 {
-	protected int ID;
+	protected String ID;
 	
 	// Pusle, mille koosseisu ese kuulub 
 	protected Puzzle puzzle;
@@ -17,7 +17,7 @@ public abstract class Prop extends javafx.scene.image.ImageView implements Click
 	// Meetod, mille abil laetakse pilt 
 	public abstract void Load();
 	
-	public Prop(int ID, Puzzle puzzle, Puzzle condition) 
+	public Prop(String ID, Puzzle puzzle, Puzzle condition) 
 	{
 		this.ID = ID;
 		this.puzzle = puzzle;
@@ -25,7 +25,7 @@ public abstract class Prop extends javafx.scene.image.ImageView implements Click
 		this.setOnMouseClicked(event -> React());
 	}
 	
-	public int getID()
+	public String getID()
 	{
 		return ID;
 	}

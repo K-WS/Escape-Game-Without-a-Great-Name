@@ -18,7 +18,7 @@ public class DynamicProp extends Prop implements Switchable{
 	public DynamicActiveState activeState;
 	public DynamicIdleState idleState;
 	
-	public DynamicProp(int ID, Puzzle puzzle, Puzzle condition, ContainerProp container) 
+	public DynamicProp(String ID, Puzzle puzzle, Puzzle condition, ContainerProp container) 
 	{
 		super(ID, puzzle, condition);
 		this.container = container;

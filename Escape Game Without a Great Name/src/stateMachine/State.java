@@ -8,13 +8,8 @@ public abstract class State
 {
 	protected Prop owner;
 	
-	protected String imageRepresentation;
-	public String getImageRepresentation() {
+	protected Image imageRepresentation;
+	public Image getImageRepresentation() {
 		return imageRepresentation;
-	}
-	
-	protected Image imageRepresentation2;
-	public Image getImageRepresentation2() {
-		return imageRepresentation2;
 	}
 }
