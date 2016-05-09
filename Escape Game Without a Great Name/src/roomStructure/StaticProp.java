@@ -1,5 +1,7 @@
 package roomStructure;
 
+import java.util.ArrayList;
+
 import stateMachine.State;
 import stateMachine.StateFactory;
 import stateMachine.StaticState;

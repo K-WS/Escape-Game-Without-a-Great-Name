@@ -17,7 +17,7 @@ public class PropFactory {
 		//string - objekti id
 		//prop - objekt selles ruumis
 		
-		Scanner sc = new Scanner(new File(failinimi));
+		Scanner sc = new Scanner(new File("props.txt"));
 		while(sc.hasNextLine()){
 			System.out.println(sc.nextLine());
 		}

@@ -41,7 +41,7 @@ public class stageTest extends Application {
 		
 		String[] crateAddress = {"file:data/Testing/crateXD.png"};
 		StaticProp crate = new StaticProp("1", null, null, crateAddress, null, false, false);
-		Group crateHolder = firstvp.getFrame();
+		Group crateHolder = new Group();
 		crateHolder.getChildren().add(crate);
 		crate.Load();
 		crateHolder.setLayoutY(275);
