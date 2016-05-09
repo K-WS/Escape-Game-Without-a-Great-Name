@@ -1,5 +1,6 @@
 package stateMachine;
 
+import javafx.scene.Group;
 import javafx.scene.image.Image;
 import roomStructure.StaticProp;
 
@@ -31,4 +32,5 @@ public class StaticState extends State
 			else ((StaticProp)owner).enterState(firstInList);
 		}
 	}
+
 }

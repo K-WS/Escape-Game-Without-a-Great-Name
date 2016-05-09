@@ -38,7 +38,7 @@ public class FileParser{
 		return null;
 	
 	}
-	public File loadPictureFromFile(String filename){return null;}
+	public File loadPictureFromFile(String filename) {  return null;  }
 
 	
 	//id, objekti_nimi, ruum, ruumikülg, alamvaade?, x, y, static/dynamic, pildifaili asukoht.
