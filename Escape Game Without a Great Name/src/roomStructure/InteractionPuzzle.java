@@ -8,8 +8,7 @@ public class InteractionPuzzle extends Puzzle{
 
 	public void locationChanged(Prop checkpoint){}
 
-	@Override
-	public void completeCheckpoint(int index) {
+	protected void completeCheckpoint(int index) {
 		// TODO Auto-generated method stub
 		
 	}

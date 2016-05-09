@@ -5,7 +5,7 @@ import java.util.Arrays;
 public abstract class Puzzle 
 {
 	protected boolean[] checkpoints;
-	public abstract void completeCheckpoint(int index);
+	protected abstract void completeCheckpoint(int index);
 	
 	public boolean isSolved() // return true if checkPoints only contains true
 	{

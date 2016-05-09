@@ -46,4 +46,10 @@ public class DynamicProp extends Prop implements Switchable{
 	@Override
 	public void React() { }
 
+	@Override
+	public void React(Prop source) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

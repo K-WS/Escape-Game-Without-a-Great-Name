@@ -41,4 +41,10 @@ public class ContainerProp extends Prop {
 		
 	}
 
+	@Override
+	public void React(Prop source) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
