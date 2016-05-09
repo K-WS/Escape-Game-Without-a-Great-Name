@@ -17,6 +17,17 @@ public class Room {
 	public ViewPoint getCurrentViewPoint() {return currentViewPoint;}
 	
 	
+	
+	public Room(String iD, ArrayList<ViewPoint> viewPoints, ViewPoint currentViewPoint) {
+		super();
+		ID = iD;
+		this.viewPoints = viewPoints;
+		this.currentViewPoint = currentViewPoint;
+	}
+
+
+
+
 	public void Load(){}
 	public void unLoad(){}
 	public void nextViewPoint(int direction){}
