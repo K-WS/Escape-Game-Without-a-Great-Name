@@ -9,7 +9,7 @@ import stateMachine.StaticState;
 @SuppressWarnings("unused")
 public class StaticProp extends Prop implements Switchable{
 	
-	private boolean invisile;
+	private boolean invisible;
 	private boolean stateLocked;
 	private StaticState currentState;
 	private ContainerProp container;
@@ -52,6 +52,21 @@ public class StaticProp extends Prop implements Switchable{
 	@Override
 	public void React() 
 	{
+		
+	}
+	
+	public void hide()
+	{
+		setOpacity(0);
+	}
+	public void unHide()
+	{
+		setOpacity(1);
+	}
+
+	@Override
+	public void React(Prop source) {
+		// TODO Auto-generated method stub
 		
 	}
 

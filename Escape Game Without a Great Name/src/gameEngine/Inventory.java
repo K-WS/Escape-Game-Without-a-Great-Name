@@ -25,5 +25,10 @@ public class Inventory implements Clickable{
 	}
 	
 	public void React(){}
+	@Override
+	public void React(Prop source) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }
