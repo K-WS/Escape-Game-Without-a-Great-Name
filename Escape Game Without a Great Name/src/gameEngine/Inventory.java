@@ -9,7 +9,7 @@ public class Inventory implements Clickable{
 	private int[] stack;
 	
 	//oletan, et slots on hoiukoht objektidele praegu
-	//selle põhjal ehitan hetkel inventory
+	//selle pï¿½hjal ehitan hetkel inventory
 	
 	public void add(Prop item){
 		for (int i = 0; i<slots.length; i++){
@@ -17,7 +17,9 @@ public class Inventory implements Clickable{
 		}
 		
 	}
-	public void remove(int index){}
+	public void remove(int index){
+		stack[index] = 0;
+	}
 	public void displayDescription(int index){
 		//oletuslikviis selgituse saamiseks
 		System.out.println(slots[index].getDescription());

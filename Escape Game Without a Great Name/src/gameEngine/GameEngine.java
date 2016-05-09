@@ -2,7 +2,6 @@ package gameEngine;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
-import objectCreation.FileParser;
 import objectCreation.RoomFactory;
 import roomStructure.Room;
 
@@ -16,8 +15,6 @@ public class GameEngine extends Application {
 
 	public static void main(String[] args) throws Exception
 	{
-		FileParser parser = new FileParser();
-		parser.openFile("testfile.txt");
 		
 		// JavaFX lol
 		Application.launch(args);
