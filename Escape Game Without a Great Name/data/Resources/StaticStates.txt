@@ -1,7 +1,4 @@
 001;kassett.png;A;1;760;270
-012;kassett.png;B;4;1;100;100
-016;kassett.png;C;3;1;100;100
-019;kassett.png;D;3;1;100;100
 020;pilt.png;A;1;0;675;29
 021;lampPun.png;A;1;1;60;73
 021;lampRoh.png;A;1;1;60;73
@@ -31,13 +28,13 @@
 041;v2ikeSahtel.png;B;2;1;684;800
 042;v2ikeSahtel.png;B;2;1;684;800
 043;suurSahtel.png;B;2;1;1129;703
-
 044;sah4auk.png;B;2;2;1129;901
 
 045;lamp3.png;B;3;1;100;100
 046;veepaakjuhtmega.png;B;3;1;0;782
 
-047;lamp4;B;4;1;x;y
+012;kassett.png;B;4;1;100;100
+047;lamp.png;B;4;1;x;y
 048;tuliPun;B;4;1;x;y
 048;tuliRoh;B;4;1;x;y
 049;tuliPun;B;4;1;x;y
@@ -51,6 +48,7 @@
 054;nupp.png;B;4;1;x,y
 055;nupp.png;B;4;1;x,y
 
+
 056;kappEes.png;C;1;2;x;y
 056;kappEest2ra.png;C;1;2;x;y
 
@@ -60,6 +58,7 @@
 060;candles.png;C;2;0;x;y
 061;ornament.png;C;2;0;x;y
 
+016;kassett.png;C;3;1;100;100
 062;lampPun.png;C;3;1;x;y
 062;lampRoh.png;C;3;1;x;y
 063;lampPun.png;C;3;1;x;y
@@ -76,18 +75,19 @@
 068;lampRoh.png;C;3;1;x;y
 069;lampPun.png;C;3;1;x;y
 069;lampRoh.png;C;3;1;x;y
-070;allsahtel;C;3;1;x;y
+070;allsahtel.png;C;3;1;x;y
 
-071;post1;D;1;0;x;y
-072;post2;D;1;0;x;y
-073;pendulum;D;1;1;x;y
-074;lamp5;D;1;1;x;y
+071;post1.png;D;1;0;x;y
+072;post2.png;D;1;0;x;y
+073;pendulum.png;D;1;1;x;y
+074;lamp.png;D;1;1;x;y
 
-075;ekraan2;D;2;2;x;y
-076;lamp6;D;2;1;x;y
+075;ekraan2.png;D;2;2;x;y
+076;lamp.png;D;2;1;x;y
 
-077;vaikekarp;D;3;0;x;y
-078;lamp7;D;3;1;x;y
+019;kassett.png;D;3;1;100;100
+077;vaikekarp.png;D;3;0;x;y
+078;lamp.png;D;3;1;x;y
 079;lulitiPun.png;D;3;4;x;y
 079;lulitiKol.png;D;3;4;x;y
 079;lulitiOr.png;D;3;4;x;y

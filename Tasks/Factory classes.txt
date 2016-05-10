@@ -1,0 +1,18 @@
+Factoryte töö
+
+PropFactroys peaks olema HashMap, kus on id-ga määratud prop
+kõigepealt loetakse sisse propid tekstifailist, luuakse iga rea kohta Prop objekt ning pannakse hashmappi, võtmeks {ID,ruum,view} (String[]). Propi loomisel pusled panna nullideks. Lisada konstruktorisse rida, mis vastavalt booleanile hidden (tuleks tekstifaili igale propile lisada) rakendab meetodit hide(). 
+
+Seejärel tuleb teha 5 ruumi, millest neljal on 4 ViewPointi ja koridoril siis 2. 
+Room klassis on selleks vastav arraylist. Aga konstruktorit veel pole, nii et see ka vaja teha. 
+currentViewPoint on esialgu see vaade, kus uks on. Sellele väljale võiks set-meetodi teha. get-i samuti. 
+
+Iga viewPointi loomisel peaks propFactory HashMapist välja noppima kõik elemendid, mille võtmed sisaldavad õiget ruumi ja ViewPoindi indeksit. Selleks võib PropFactorysse abimeetodi teha, mis võtaks argumendiks stringid, nt "A",1. Need elemendid lisada vastavasse ArrayListi. Muidu luuakse ViewPoint nagu JavaFX Scene - tal peab olema mingi root (nt new Pane() või new Group(); tee ka vastav isendiväli) ning mõõtmed. Igal ViewPoindil on ka oma taustapilt, mille võiks konstruktoris seada .setStyle()-i abil (CSS). 
+
+Klassi Room meetodid Load() ja unLoad() on pooleldi mõttetud: ära veel ei kustuta, aga midagi sinna kirjutada ka pole vaja. 
+nextViewPoint teeb midagi stiilis currentViewPoint = viewPoints.get(viewPoints.indexOf(currentViewPoint)+direction)), aga kui indexOf() on 4 või 1 ja tahetakse neist üle (või alla) minna, tuleb midagi ette võtta, nt if-elif-else plokk või switch(...indexOf(...)).  
+
+Võib teha testklassi, mis loob kõik propid-ruumid-viewpoindid ning prindib valikuliselt nende andmeid. 
+
+
+(iga propi valmistamisel pöördutakse ka statefactory poole, aga see olgu viimane asi & minu teha)

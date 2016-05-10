@@ -25,7 +25,7 @@ public class StaticProp extends Prop implements Switchable{
 	@Override
 	public void Load() 
 	{
-		this.setImage(currentState.getImageRepresentation());
+		imageHolder.setImage(currentState.getImageRepresentation());
 	}
 
 	@Override
@@ -58,6 +58,7 @@ public class StaticProp extends Prop implements Switchable{
 	public void hide()
 	{
 		setOpacity(0);
+		lockState();
 	}
 	public void unHide()
 	{

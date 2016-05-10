@@ -1,12 +1,14 @@
 package roomStructure;
 
 import gameEngine.Clickable;
+import javafx.scene.Group;
 import javafx.scene.image.ImageView;
 
 
-public abstract class Prop extends javafx.scene.image.ImageView implements Clickable
+public abstract class Prop extends Group implements Clickable
 {
 	protected String ID;
+	protected ImageView imageHolder;
 	
 	// Pusle, mille koosseisu ese kuulub 
 	protected Puzzle puzzle;

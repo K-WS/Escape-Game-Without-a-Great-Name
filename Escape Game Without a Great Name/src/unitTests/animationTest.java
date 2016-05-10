@@ -37,7 +37,18 @@ public class animationTest extends Application {
 		
 		String[] crateAddress = {"file:data/Testing/flame.png"};
 		String[] crateAddress2 = {"file:data/Testing/flame2.png"};
+		String[] holeAddress = {"file:data/Testing/kaminaAuk.png"};
 
+		StaticProp hole = new StaticProp("3", null, null, holeAddress, null, false, false);
+		Group holeHolder = new Group();
+		holeHolder.getChildren().add(hole);
+		hole.Load();
+		holeHolder.setLayoutX(316.6);
+		holeHolder.setLayoutY(320);
+		holeHolder.setScaleX(0.545); holeHolder.setScaleY(0.545);
+		
+		
+		
 		StaticProp itemExample = new StaticProp("1", null, null, crateAddress, null, false, false);
 		Group itemHolder = new Group();
 		itemHolder.getChildren().add(itemExample);
@@ -58,7 +69,7 @@ public class animationTest extends Application {
 		itemHolder2.setRotate(7);
 		itemExample2.setScaleX(0.545); itemExample2.setScaleY(0.545);
 		
-		xdGroup.getChildren().addAll(itemHolder, itemHolder2);
+		xdGroup.getChildren().addAll(holeHolder, itemHolder, itemHolder2);
 		
 		itemHolder2.setOnMouseClicked(event -> {itemExample2.hide(); itemExample.hide();});
 		itemHolder.setOnMouseClicked(event -> {itemExample2.hide(); itemExample.hide();});

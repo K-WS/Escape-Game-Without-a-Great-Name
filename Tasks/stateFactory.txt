@@ -1,0 +1,9 @@
+﻿DynamicState'ide loomine
+
+Kõigepealt loetakse nii static kui ka dynamicIdle seisundid failist ning pannakse HashMappi.
+StaticPropi tegemisel kutsutakse meetod buildStaticStates(Prop owner) ning saadakse kõik vajalikud state'id. (juba valmis)
+DynamicPropi tegemisel analoogiline meetod, aga iga IdleState'i juures tehakse valmis ka Inventory- ja ActiveState (sest failinimed on fas -Ico.png või -Select.png). 
+ActiveState'il on ka nimekiri võimalikest asukohtadest. 
+Stiilis mitu;esimene_x;esimene_y;event_või_null;teine_x;teine_y;event_või_null;
+
+Kuskil Playeri klassis peaks olema väli, mis näitab, mis ese parajasti aktiivne on. See ese on juba iseenesest ActiveState'is ja sealt saab asju kätte. 
