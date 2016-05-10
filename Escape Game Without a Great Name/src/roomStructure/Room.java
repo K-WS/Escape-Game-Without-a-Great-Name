@@ -16,8 +16,13 @@ public class Room {
 	private ViewPoint currentViewPoint;
 	public ViewPoint getCurrentViewPoint() {return currentViewPoint;}
 	
-	
-	
+	public void setCurrentViewPoint(ViewPoint currentViewPoint) {
+		this.currentViewPoint = currentViewPoint;
+	}
+
+
+
+
 	public Room(String iD, ArrayList<ViewPoint> viewPoints, ViewPoint currentViewPoint) {
 		super();
 		ID = iD;
@@ -30,7 +35,17 @@ public class Room {
 
 	public void Load(){}
 	public void unLoad(){}
-	public void nextViewPoint(int direction){}
+	public void nextViewPoint(int direction){
+		if(direction == 1 && viewPoints.indexOf(currentViewPoint)==3){
+			currentViewPoint = viewPoints.get(0);
+		}
+		else if(direction == -1 && viewPoints.indexOf(currentViewPoint)==0){
+			currentViewPoint = viewPoints.get(3);
+		}
+		else{
+		currentViewPoint = viewPoints.get(viewPoints.indexOf(currentViewPoint)+direction);
+		}
+	}
 	
 	
 
