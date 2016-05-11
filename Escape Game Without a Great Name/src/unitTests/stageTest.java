@@ -29,7 +29,7 @@ public class stageTest extends Application {
 	public static void main(String[] args) throws FileNotFoundException {
 		
 		
-		ViewPoint firstvp = new ViewPoint(1014, 512, 0, new ArrayList<Prop>());
+		ViewPoint firstvp = new ViewPoint(1014, 512, 0, new ArrayList<StaticProp>());
 		firstvp.getPane().setStyle(
 				  "-fx-background-image: url('file:data/Testing/roomTestC3.png'); "
 				+ "-fx-background-repeat: stretch;"   

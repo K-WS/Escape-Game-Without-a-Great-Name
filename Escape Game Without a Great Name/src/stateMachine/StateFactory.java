@@ -100,7 +100,10 @@ public class StateFactory
 					remoteID = dataArray[11]; i = 11;
 					System.out.println("Remote index 11: "+dataArray[11]);
 				}
-				else { pokeResults = null; pokeID = null; remoteID = dataArray[6]; i = 6;
+				else 
+				{ 
+					pokeResults = null; 
+					pokeID = null; remoteID = dataArray[6]; i = 6;
 				System.out.println("Remote index 6: "+dataArray[6]);}
 				String door;
 
@@ -126,7 +129,7 @@ public class StateFactory
 					door = dataArray[i+1];
 				else
 					door = null;
-				System.out.println("KASSETT: "+dataArray[0]);
+				System.out.println("FAILINIMI: "+dataArray[0]+"<---");
 				ss = new StaticState(
 						"file:/data/Testing/"+dataArray[0].trim(),
 						ss, 
@@ -139,9 +142,9 @@ public class StateFactory
 						door					
 						);
 				states.add(ss);
-				ss.setFirstInList(states.get(0));
 			}
 		}
-		return states.get(0);
+		states.forEach(x -> x.setFirstInList(states.get(states.size()-1)));
+		return states.get(states.size()-1);
 	}
 }
