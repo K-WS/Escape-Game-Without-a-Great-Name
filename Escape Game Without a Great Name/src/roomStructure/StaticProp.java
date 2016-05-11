@@ -15,6 +15,9 @@ public class StaticProp extends Prop implements Switchable{
 	private boolean invisible;
 	private boolean stateLocked;
 	private StaticState currentState;
+	public StaticState getCurrentState() {
+		return currentState;
+	}
 	
 
 	
@@ -40,6 +43,7 @@ public class StaticProp extends Prop implements Switchable{
 	{
 		imageHolder = new ImageView();
 		getChildren().add(imageHolder);
+		System.out.println(currentState.getImageRepresentation().getHeight());
 		imageHolder.setImage(currentState.getImageRepresentation());
 	}
 	

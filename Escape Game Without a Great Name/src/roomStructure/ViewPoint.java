@@ -20,16 +20,24 @@ public class ViewPoint extends Scene{
 	public Pane getPane() {
 		return pane;
 	}
-	private HashMap<String,Prop> props;
+	private HashMap<String,StaticProp> staticProps;
+	public void addProp(StaticProp p)
+	{
+		staticProps.put(p.getID(),p);
+	}
+	public Prop getProp(String id)
+	{
+		return staticProps.get(id);
+	}
 	
 	public ViewPoint(double width, double height, int index, ArrayList<Prop> props) 
 	{
 		super(new Pane(),width, height);
 		pane = (Pane)getRoot();
-		this.props = new HashMap<String,Prop>();
+		this.staticProps = new HashMap<String,StaticProp>();
 		this.IDindex = index;
 		if(props.size()>0){
-			for(Prop p : props)
+			for(StaticProp p : staticProps)
 			{
 				this.props.put(p.getID(), p);
 			}

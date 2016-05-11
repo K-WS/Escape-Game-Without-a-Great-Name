@@ -128,7 +128,7 @@ public class StateFactory
 					door = null;
 				System.out.println("KASSETT: "+dataArray[0]);
 				ss = new StaticState(
-						"file:"+dataArray[0],
+						"file:/data/Testing/"+dataArray[0].trim(),
 						ss, 
 						owner, 
 						pokeID, 

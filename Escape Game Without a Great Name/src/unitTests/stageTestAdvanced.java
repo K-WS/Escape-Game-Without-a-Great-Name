@@ -8,6 +8,7 @@ import java.util.HashMap;
 import javafx.application.Application;
 import javafx.scene.*;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 import roomStructure.*;
@@ -25,7 +26,12 @@ public class stageTestAdvanced extends Application {
 		primaryStage.setResizable(false);
 		primaryStage.setScene(currentViewPoints.get(1));
 		System.out.println("here now");
-		((StaticProp)currentViewPoints.get(1).getPane().getChildren().get(0)).Load();
+		StaticProp p = (StaticProp)currentViewPoints.get(1).getProp("001");
+		Image im = p.getCurrentState().getImageRepresentation();
+		ImageView iw = new ImageView(im);
+		currentViewPoints.get(1).getPane().getChildren().add(iw);
+		
+//		currentViewPoints.get(1).getProp("001").Load();
 		primaryStage.show();
 		
 	}
@@ -49,6 +55,7 @@ public class stageTestAdvanced extends Application {
 		
 		
 		firstvp.getPane().getChildren().add(xd);
+		firstvp.addProp(xd);
 		
 		launch(args);
 	}

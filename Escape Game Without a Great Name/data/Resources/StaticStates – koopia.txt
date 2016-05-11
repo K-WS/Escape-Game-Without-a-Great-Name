@@ -1,0 +1,107 @@
+001;kassett.png;A;1;760;270;null;null;false
+020;pilt.png;A;1;675;29;null;null  	// konteiner
+021;lampRoh.png;A;1;60;73;null;028;false;false;false;false;true;false
+021;lampPun.png;A;1;60;73;null;028;false;false;false;false;true;false
+022;lampPun.png;A;1;330;73;null;032;false;false;true;false;true;false
+022;lampRoh.png;A;1;330;73;null;null;false
+024;auks.png;A;1;70;-73;006;false;false;false;true;false;null;true;E
+
+028;tulip6leb.png;A;2;316.6;320;007;false;false;false;false;true;null;false			// heledam kaminaauk
+028;tulieip6le.png;A;2;316.6;320;003;false;false;false;false;true;null;true;C 	//endine kaminaauk, muuda pildi nime
+
+031;kirst.png;A;3;550;315;87;false;false;true;false;true;null;false
+031;kirstKatki.png;A;3;550;315;null;null;false
+
+032;ekraan.png;A;4;x;y;null;null;false		// küsimused ^^
+
+033;Auks.png;E;1;67;155;null;null;true;A
+034;Buks.png;E;1;773;157;null;null;true;B
+035;Cuks.png;E;1;281;211;null;056;false;false;false;true;false;true;C
+036;Duks.png;E;1;646;211;null;(!!!punaneKuul);false;false;false;true;false;true;D
+037;Mainuks.png;E;2;422;194;015;false;false;false;true;false;true;WIN (!!!)
+
+038;buks.png;B;1;472;-84;null;null;true;E
+
+039;kirvekarp.png;B;2;97;0 				 // container
+040;v2ikeSahtel.png;B;2;300;300			 // container
+041;v2ikeSahtel.png;B;2;300;360			 // container
+042;v2ikeSahtel.png;B;2;300;420			 // container
+043;suurSahtel.png;B;2;478;287			 // container
+044;sah4auk.png;B;2;x;y;003;false;false;true;false;true;null;false
+044;sah4aukP6leb.png;B;2;x;y;null;null;false
+
+045;lamp.png;B;3;x;y;null;046;false;false;false;false;true;null;
+046;veePaak.png;B;3;x;y;89;true;false;false;true
+
+012;kassett.png;B;4;150;450;null;null;false
+047;lampPun.png;B;4;1150;50;null;048+049+050+051;false;false;false;false;true;false
+047;lampRoh.png;B;4;1150;50;null;null;false
+048;tuliPun;B;4;417;220;null;052/054;false;false;false;false;true;false
+048;tuliRoh;B;4;417;220;null;052/054;false;false;false;false;true;false
+049;tuliPun;B;4;504;220;null;053/054/055;false;false;false;false;true;false
+049;tuliRoh;B;4;504;220;null;053/054/055;false;false;false;false;true;false
+050;tuliPun;B;4;417;270;null;052/053/054/055;false;false;false;false;true;false
+050;tuliRoh;B;4;417;270;null;052/053/054/055;false;false;false;false;true;false
+051;tuliPun;B;4;504;270;null;055;false;false;false;false;true;false
+051;tuliRoh;B;4;504;270;null;055;false;false;false;false;true;false
+052;nupp.png;B;4;413;175;null;null;false
+053;nupp.png;B;4;450;175;null;null;false
+054;nupp.png;B;4;487;175;null;null;false
+055;nupp.png;B;4;524;175;null;null;false
+
+056;kappEes.png;C;1;-20;-120;null;null;false
+056;kappEest2ra.png;C;1;-20;400;null;null;false
+058;door.png;C;1;x;y;null;056;false;false;false;true;true;E
+
+057;voltssein.png;C;2;620;137;008,true;false;true;false;false
+
+016;kassett.png;C;3;480;500;null;null;false
+062;lampPun.png;C;3;325;205;null;021;false;false;true;false;true;false
+062;lampRoh.png;C;3;325;205;null;null;false
+063;lampPun.png;C;3;405;205;null;022;false;false;true;false;true;false
+063;lampRoh.png;C;3;405;205;null;null;false
+064;lampPun.png;C;3;495;205;null;045;false;false;true;false;true;false
+064;lampRoh.png;C;3;495;205;null;null;false
+065;lampPun.png;C;3;575;205;null;047;false;false;true;false;true;false
+065;lampRoh.png;C;3;575;205;null;null;false
+066;lampPun.png;C;3;x;y;null;074;false;false;true;false;true;false
+066;lampRoh.png;C;3;x;y;null;null;false
+067;lampPun.png;C;3;x;y;null;076;false;false;true;false;true;false
+067;lampRoh.png;C;3;x;y;null;null;false
+068;lampPun.png;C;3;x;y;null;078;false;false;true;false;true;false
+068;lampRoh.png;C;3;x;y;null;null;false
+069;lampPun.png;C;3;x;y;null;083;false;false;true;false;true;false
+069;lampRoh.png;C;3;x;y;null;null;false
+070;pikkSahtel.png;C;3;x;y;null;62+63+64+65+66+67+68+69;true;false;true;false;false
+
+030;door.png;D;1;x;y;null;null;true;E
+073;pendulumIdle.png;D;1;x;y;null;029;false;false;false;false;true;false
+073;pendulumMoving.png;D;1;x;y;null;null;false
+074;lampPun.png;D;1;x;y;null;073;false;false;false;false;true;false
+074;lampRoh.png;D;1;x;y;null;null;false
+
+075;ekraan2.png;D;2;x;y;null;null;false
+076;lamp.png;D;2;x;y;null;075;false,false;false;false;true;false
+
+019;kassett.png;D;3;100;100;null;null;false
+078;lamp.png;D;3;x;y;null;089;false;false;false;false;true;false
+079;lulitiPun.png;D;3;x;y;null;079/080;false;false;false;false;true;false
+079;lulitiKol.png;D;3;x;y;null;079/080;false;false;false;false;true;false
+079;lulitiOr.png;D;3;x;y;null;079/080;false;false;false;false;true;false
+079;lulitiRoh.png;D;3;x;y;null;079/080;false;false;false;false;true;false
+080;lulitiPun.png;D;3;x;y;null;079/081;false;false;false;false;true;false
+080;lulitiKol.png;D;3;x;y;null;079/081;false;false;false;false;true;false
+080;lulitiOr.png;D;3;x;y;null;079/081;false;false;false;false;true;false
+080;lulitiRoh.png;D;3;x;y;null;079/081;false;false;false;false;true;false
+081;lulitiPun.png;D;3;x;y;null;080/081;false;false;false;false;true;false
+081;lulitiKol.png;D;3;x;y;null;080/081;false;false;false;false;true;false
+081;lulitiOr.png;D;3;x;y;null;080/081;false;false;false;false;true;false
+081;lulitiRoh.png;D;3;x;y;null;080/081;false;false;false;false;true;false
+082;panel.png;D;3;x;y;010;true;valse;true;false;false;false
+089;nupp.png;D;3;x;y;079+080+81;false;false;false;true;false;false;
+
+083;lampPun.png;D;4;x;y;null;084+085+086;false;false;false;false;true;false
+083;lampRoh.png;D;4;x;y;null;null;false
+084;metalpipe.png;D;4;x;y;009/014/008;false;false;true;false;false;null;false
+085;metalpipe.png;D;4;x;y;009/014/008;false;false;true;false;false;null;false
+086;metalpipe.png;D;4;x;y;009/014/008;false;false;true;false;false;null;false
