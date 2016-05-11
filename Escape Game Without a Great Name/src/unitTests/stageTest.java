@@ -2,6 +2,7 @@ package unitTests;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import javafx.application.Application;
@@ -27,22 +28,21 @@ public class stageTest extends Application {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		
-		Pane xdGroup = new Pane();
-		xdGroup.setStyle(
+		
+		ViewPoint firstvp = new ViewPoint(1014, 512, 0, new ArrayList<Prop>());
+		firstvp.getPane().setStyle(
 				  "-fx-background-image: url('file:data/Testing/roomTestC3.png'); "
 				+ "-fx-background-repeat: stretch;"   
 				+ "-fx-background-position: center center; "
 				+ "-fx-background-size: 1024, 512"
 				);
-		
-		ViewPoint firstvp = new ViewPoint(xdGroup, 1014, 512);
 		currentViewPoints = new HashMap<Integer,Scene>();
 		currentViewPoints.put(1, firstvp);
 		
 		String[] itemAddress = {"file:data/Testing/lampPun.png"};
 		String[] extraAddress = {"file:data/Testing/lampRoh.png"};
 		StaticProp itemExample = new StaticProp("1",itemAddress, false, false);
-		StaticProp extra = new StaticProp("2",extraAddress, false, false);
+		StaticProp extra = new StaticProp("2", extraAddress, false, false);
 		
 		itemExample.Load(); 
 		extra.Load();
@@ -55,7 +55,7 @@ public class stageTest extends Application {
 		
 		itemExample.setScaleX(0.545); itemExample.setScaleY(0.545);
 		extra.setScaleX(0.545); extra.setScaleY(0.545);
-		xdGroup.getChildren().addAll(itemExample, extra /*itemHolder, doorHolder*/);
+		firstvp.getPane().getChildren().addAll(itemExample, extra /*itemHolder, doorHolder*/);
 		
 		launch(args);
 	}

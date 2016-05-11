@@ -4,12 +4,10 @@ import javafx.event.Event;
 import javafx.event.EventType;
 
 public class SomethingHappened extends Event {
-	
-	private String source; 
-	@Override
-	public Object getSource() {
-		// TODO Auto-generated method stub
-		return super.getSource();
+	public static EventType<SomethingHappened> GAME_EVENTS = new EventType<SomethingHappened>("GAME_EVENTS");
+	private String sourceID; 
+	public String getSourceID() {
+		return sourceID;
 	}
 
 	public SomethingHappened(EventType<? extends Event> arg0, String sourceID) {

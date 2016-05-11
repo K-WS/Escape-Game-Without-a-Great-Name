@@ -1,8 +1,6 @@
 package roomStructure;
 
 import gameEngine.Clickable;
-import javafx.event.EventHandler;
-import javafx.event.EventType;
 import javafx.scene.Group;
 import javafx.scene.image.ImageView;
 

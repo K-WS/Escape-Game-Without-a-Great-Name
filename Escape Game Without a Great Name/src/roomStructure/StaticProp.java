@@ -3,9 +3,11 @@ package roomStructure;
 import java.util.ArrayList;
 
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import stateMachine.State;
 import stateMachine.StateFactory;
 import stateMachine.StaticState;
+import stateMachine.SomethingHappened;
 
 @SuppressWarnings("unused")
 public class StaticProp extends Prop implements Switchable{
@@ -13,6 +15,7 @@ public class StaticProp extends Prop implements Switchable{
 	private boolean invisible;
 	private boolean stateLocked;
 	private StaticState currentState;
+	
 
 	
 	public StaticProp(String ID, boolean isLocked, boolean isInvisible) 
@@ -60,15 +63,28 @@ public class StaticProp extends Prop implements Switchable{
 		
 	}
 
+	
 	@Override
 	public void lockState() {
 		stateLocked = true;
+		if(currentState.getHandler() != null)
+			currentState.removeEventHandler(SomethingHappened.GAME_EVENTS, currentState.getHandler());
+		if(currentState.getRemoteID() != null)
+		{
+			currentState.removeEventHandler(MouseEvent.MOUSE_CLICKED, currentState.getClickHandler());
+		}
 		
 	}
 
 	@Override
 	public void unlockState() {
 		stateLocked = false;
+		if(currentState.getHandler() != null)
+			currentState.addEventHandler(SomethingHappened.GAME_EVENTS, currentState.getHandler());
+		if(currentState.getRemoteID() != null)
+		{
+			currentState.addEventHandler(MouseEvent.MOUSE_CLICKED, currentState.getClickHandler());
+		}
 		
 	}
 

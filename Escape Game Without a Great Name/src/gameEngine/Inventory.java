@@ -4,6 +4,7 @@ import roomStructure.DynamicProp;
 import roomStructure.Prop;
 
 public class Inventory implements Clickable{
+	public static DynamicProp activeItem;
 	private DynamicProp[] slots;
 	private int[] stack;
 	
