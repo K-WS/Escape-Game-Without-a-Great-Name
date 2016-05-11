@@ -13,14 +13,23 @@ public class StaticProp extends Prop implements Switchable{
 	private boolean invisible;
 	private boolean stateLocked;
 	private StaticState currentState;
-	private ContainerProp container;
 
-	public StaticProp(String ID, Puzzle puzzle, Puzzle condition, String[] filenamesReversed, 
-						ContainerProp container, boolean locked, boolean invisible) 
+	
+	public StaticProp(String ID, boolean isLocked, boolean isInvisible) 
 	{
-		super(ID, puzzle, condition);
-		this.container = container;
+		super(ID);
+		invisible = isInvisible;
+		if (isLocked)
+			hide();
+	}
+	
+	// Testkonstruktor, seda ei kasuta
+	public StaticProp(String ID, String[] filenamesReversed, 
+			boolean locked, boolean invisible) 
+	{
+		super(ID);
 		currentState = StateFactory.buildStatics(filenamesReversed, this);
+		
 	}
 
 	@Override
@@ -29,6 +38,17 @@ public class StaticProp extends Prop implements Switchable{
 		imageHolder = new ImageView();
 		getChildren().add(imageHolder);
 		imageHolder.setImage(currentState.getImageRepresentation());
+	}
+	
+	public void hide()
+	{
+		setOpacity(0);
+		lockState();
+	}
+	public void unHide()
+	{
+		setOpacity(1);
+		unlockState();
 	}
 
 	@Override
@@ -58,15 +78,7 @@ public class StaticProp extends Prop implements Switchable{
 		
 	}
 	
-	public void hide()
-	{
-		setOpacity(0);
-		lockState();
-	}
-	public void unHide()
-	{
-		setOpacity(1);
-	}
+	
 
 	@Override
 	public void React(Prop source) {

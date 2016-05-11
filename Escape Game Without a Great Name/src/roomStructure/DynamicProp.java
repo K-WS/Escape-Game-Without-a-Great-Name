@@ -1,5 +1,6 @@
 package roomStructure;
 
+import javafx.scene.image.ImageView;
 import stateMachine.DynamicActiveState;
 import stateMachine.DynamicIdleState;
 import stateMachine.DynamicInventoryState;
@@ -11,26 +12,32 @@ public class DynamicProp extends Prop implements Switchable{
 	private boolean stateLocked;
 	private DynamicState currentState;
 	
-	@SuppressWarnings("unused")
-	private ContainerProp container;
-	
 	public DynamicInventoryState inventoryState;
 	public DynamicActiveState activeState;
 	public DynamicIdleState idleState;
 	
-	public DynamicProp(String ID, Puzzle puzzle, Puzzle condition, ContainerProp container) 
+	public DynamicProp(String ID) 
 	{
-		super(ID, puzzle, condition);
-		this.container = container;
-		inventoryState = new DynamicInventoryState();
-		activeState = new DynamicActiveState();
-		idleState = new DynamicIdleState();
+		super(ID);
+	}
+	
+	public void hide()
+	{
+		setOpacity(0);
+		lockState();
+	}
+	public void unHide()
+	{
+		setOpacity(1);
+		unlockState();
 	}
 
 	@Override
 	public void Load() 
 	{
-		// Making prop visible / interactable
+		imageHolder = new ImageView();
+		getChildren().add(imageHolder);
+		imageHolder.setImage(currentState.getImageRepresentation());
 	}
 
 	public void enterState(State newState) 

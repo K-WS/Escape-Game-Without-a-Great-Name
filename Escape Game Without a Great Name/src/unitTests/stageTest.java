@@ -41,8 +41,8 @@ public class stageTest extends Application {
 		
 		String[] itemAddress = {"file:data/Testing/lampPun.png"};
 		String[] extraAddress = {"file:data/Testing/lampRoh.png"};
-		StaticProp itemExample = new StaticProp("1", null, null, itemAddress, null, false, false);
-		StaticProp extra = new StaticProp("2", null, null, extraAddress, null, false, false);
+		StaticProp itemExample = new StaticProp("1",itemAddress, false, false);
+		StaticProp extra = new StaticProp("2",extraAddress, false, false);
 		
 		itemExample.Load(); 
 		extra.Load();
