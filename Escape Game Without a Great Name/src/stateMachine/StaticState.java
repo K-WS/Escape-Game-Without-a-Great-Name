@@ -118,6 +118,7 @@ public class StaticState extends State
 			if(nextInList != null)
 				((StaticProp) owner).enterState(nextInList);
 			else ((StaticProp)owner).enterState(firstInList);
+			fireEvent(new SomethingHappened(SomethingHappened.GAME_EVENTS, owner.getID()));
 		}
 	}
 

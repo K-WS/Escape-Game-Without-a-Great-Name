@@ -12,9 +12,9 @@ ID;file_name;room;VP;x;y;pokeID;makeInvisible;makeVisible;lock;unLock;changeStat
 ID;file_name;room;VP;x;y;pokeID;makeInvisible;makeVisible;lock;unLock;distantID;makeVisible;lock;unLock
 
 <<<DynamicActiveStates.txt>>>
-ID;file_name;nrOfPossibleLocations;room1;VP1;x1;y1;...;roomn;VPn;xn;yn
+ID;file_name;nrOfPossibleLocations;room1;VP1;x1;y1;erase(bool);...;roomn;VPn;xn;yn;erase(bool)
 
-// nrOfPossibleLocations või olla 0; sest siis on ese saadaval konteinerist ja teda pole enam võimalik kuhugi panna
+// nrOfPossibleLocations võib olla 0; sest siis on ese saadaval konteinerist ja teda pole enam võimalik kuhugi panna
 
 
 <<<DynamicInventoryStates.txt>>>
