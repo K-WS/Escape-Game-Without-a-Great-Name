@@ -29,7 +29,7 @@ public class stageTest extends Application {
 		
 		Pane xdGroup = new Pane();
 		xdGroup.setStyle(
-				  "-fx-background-image: url('file:data/Testing/roomTestA1.png'); "
+				  "-fx-background-image: url('file:data/Testing/roomTestC3.png'); "
 				+ "-fx-background-repeat: stretch;"   
 				+ "-fx-background-position: center center; "
 				+ "-fx-background-size: 1024, 512"
@@ -39,26 +39,23 @@ public class stageTest extends Application {
 		currentViewPoints = new HashMap<Integer,Scene>();
 		currentViewPoints.put(1, firstvp);
 		
-		String[] crateAddress = {"file:data/Testing/pilt.png"};
-		String[] doorAddress = {"file:data/Testing/auks.png"};
-		StaticProp itemExample = new StaticProp("1", null, null, crateAddress, null, false, false);
-		StaticProp door = new StaticProp("2", null, null, doorAddress, null, false, false);
+		String[] itemAddress = {"file:data/Testing/lampPun.png"};
+		String[] extraAddress = {"file:data/Testing/lampRoh.png"};
+		StaticProp itemExample = new StaticProp("1", null, null, itemAddress, null, false, false);
+		StaticProp extra = new StaticProp("2", null, null, extraAddress, null, false, false);
 		
-		Group itemHolder = new Group();
-		Group doorHolder = new Group();
-		itemHolder.getChildren().add(itemExample);
-		doorHolder.getChildren().add(door);
 		itemExample.Load(); 
-		door.Load();
-		itemHolder.setLayoutX(675);
-		itemHolder.setLayoutY(29);
+		extra.Load();
 		
-		doorHolder.setLayoutX(70);
-		doorHolder.setLayoutY(-73);
+		itemExample.setLayoutX(325);
+		itemExample.setLayoutY(205);
+		
+		extra.setLayoutX(405);
+		extra.setLayoutY(205);
 		
 		itemExample.setScaleX(0.545); itemExample.setScaleY(0.545);
-		door.setScaleX(0.545); door.setScaleY(0.545);
-		xdGroup.getChildren().addAll(itemHolder, doorHolder);
+		extra.setScaleX(0.545); extra.setScaleY(0.545);
+		xdGroup.getChildren().addAll(itemExample, extra /*itemHolder, doorHolder*/);
 		
 		launch(args);
 	}

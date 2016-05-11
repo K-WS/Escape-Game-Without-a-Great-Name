@@ -1,0 +1,16 @@
+002;leht1Ico.png
+003;tikudIco.png
+004;puitIco.png
+005;tangidIco.png
+006;votiIco.png
+07;pangIco.png
+008;kirvesIco.png
+009;kuulIco.png
+010;kruvikeerajaIco.png
+011;pangveegaIco.png
+013;leht2Ico.png
+014;kuulIco.png
+015;voitvotiIco.png
+017;karpIco.png
+018;kuulIco.png
+025;puit_altIco.png

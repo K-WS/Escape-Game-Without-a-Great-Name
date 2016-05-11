@@ -2,6 +2,7 @@ package roomStructure;
 
 import java.util.ArrayList;
 
+import javafx.scene.image.ImageView;
 import stateMachine.State;
 import stateMachine.StateFactory;
 import stateMachine.StaticState;
@@ -25,6 +26,8 @@ public class StaticProp extends Prop implements Switchable{
 	@Override
 	public void Load() 
 	{
+		imageHolder = new ImageView();
+		getChildren().add(imageHolder);
 		imageHolder.setImage(currentState.getImageRepresentation());
 	}
 

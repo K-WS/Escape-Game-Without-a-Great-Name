@@ -1,6 +1,8 @@
 package roomStructure;
 
 import gameEngine.Clickable;
+import javafx.event.EventHandler;
+import javafx.event.EventType;
 import javafx.scene.Group;
 import javafx.scene.image.ImageView;
 
@@ -25,6 +27,7 @@ public abstract class Prop extends Group implements Clickable
 		this.puzzle = puzzle;
 		this.condition = condition;
 		this.setOnMouseClicked(event -> React());
+		//this.addEventHandler(EventType.ROOT, eventHandler);
 	}
 	
 	public String getID()
