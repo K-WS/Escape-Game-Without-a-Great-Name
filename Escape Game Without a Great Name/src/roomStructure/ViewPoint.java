@@ -14,14 +14,11 @@ import javafx.scene.layout.Pane;
 
 @SuppressWarnings("unused")
 public class ViewPoint extends Scene implements Clickable{
-	private ViewPoint CurrentViewPoint;
 	private Room leadsTo;
 	
 	public ViewPoint(Parent arg0, double arg1, double arg2) {
 		super(arg0, arg1, arg2);
 	}
-	
-	public void setCurrentViewPoint(ViewPoint c){this.CurrentViewPoint = c;}
 	
 
 	private HashMap<Double[], Clickable> locationsToMembers;
