@@ -1,0 +1,21 @@
+﻿Erandid: 
+
+kapp - nihutamisel asukoht muutub
+mainuks - kui ese on lõpuvõti, siis mäng läbi
+vesi (konteiner) - kui klikid ämbriga, siis vana ämber kaob
+vesi (konteiner + hide) - kui vajutatakse nuppu, siis kaob ise ära
+puit (dünaamiline) - kaob ära, kui tikuga torgitakse
+kamin - tuli süttib, kui puit süüdatakse
+kamin - animatsioon
+suurSahtel - avaneb siis, kui kaminas süüdatakse tuli (tikust)
+pendel hakkab võnkuma, kui midagi juhtub
+kassett (dünaamiline) - klikkimisel mäng salvestu
+punane lamp B4 - süttib, kui 4 tuld on rohelised
+karp (dünaamiline) - maha asetamise järel saab kuuli  SCRATCH THAT
+
+kui plussid, siis peavad kõik olema täidetud korraga, samadel tingimustel (nt lambid korraga põlema)
+kui kaldkriipsud, siis mõjutavad ühtemoodi mitu eset (nt mitu nuppu ühte tuld); 
+
+pokeID - võib olla poke, see on näpuga torkimine
+
+konteiner - nimi ja asukoht failis

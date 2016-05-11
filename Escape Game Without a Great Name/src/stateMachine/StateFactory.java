@@ -7,7 +7,6 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Scanner;
 
-import roomStructure.Prop;
 import roomStructure.StaticProp;
 
 public class StateFactory 

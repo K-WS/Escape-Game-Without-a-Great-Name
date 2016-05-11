@@ -1,0 +1,21 @@
+<<<props.txt>>>
+ID;static_or_dynamic_or_container;cant_interact_at_start(bool);is_invisible_at_start(false);
+
+<<<StaticStates.txt>>>
+ID;file_name;room;VP;x;y;pokeID;makeInvisible;makeVisible;lock;unLock;changeState;distantID;makeVisible;lock;unLock;changeState;is_a_door(bool);to_where
+
+// pokeID - selle eseme ID, millega torkides midagi juhtub. Võib olla null, siis ei tule järgmist nelja välja. 
+// makeInvisible, makeVisible, lock, unLock - booleanid, mis tähistavad, mis juhtub esemega torkimisel. 
+// distantID - selle eseme ID, mis asub kuskil mujal ning mille "aktiveerimisel" midagi juhtub. Muus analoogiline pokeID-ga. 
+
+<<<DynamicIdleStates.txt>>>
+ID;file_name;room;VP;x;y;pokeID;makeInvisible;makeVisible;lock;unLock;distantID;makeVisible;lock;unLock
+
+<<<DynamicActiveStates.txt>>>
+ID;file_name;nrOfPossibleLocations;room1;VP1;x1;y1;...;roomn;VPn;xn;yn
+
+// nrOfPossibleLocations või olla 0; sest siis on ese saadaval konteinerist ja teda pole enam võimalik kuhugi panna
+
+
+<<<DynamicInventoryStates.txt>>>
+ID;file_icon_name;description_text

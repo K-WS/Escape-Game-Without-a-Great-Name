@@ -55,7 +55,7 @@ public class PropFactory {
 			//kas on static või dynamic, 
 			//uus objekt luua, kuid ma ikka ei saa aru, mis kõik need asjjad on, mida
 			//StaticProp väärtusest tahetakse.
-			Prop prop = new StaticProp(s_alt[0], null, null, null, null, null, null);
+			Prop prop = new StaticProp(s_alt[0], null, null, null, null, false, false);
 //			String ID, Puzzle puzzle, Puzzle condition, String[] filenamesReversed, 
 //			ContainerProp container, boolean locked, boolean invisible) 
 			

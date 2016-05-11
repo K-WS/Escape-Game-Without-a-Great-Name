@@ -1,5 +1,6 @@
 package roomStructure;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import gameEngine.Clickable;
@@ -13,26 +14,31 @@ import javafx.scene.layout.Pane;
 //.indexOf(this)
 
 @SuppressWarnings("unused")
-public class ViewPoint extends Scene implements Clickable{
-	private Room leadsTo;
+public class ViewPoint extends Scene{
+	private int IDindex;
+	private Pane pane;
+	public Pane getPane() {
+		return pane;
+	}
+	private HashMap<String,Prop> props;
 	
-	public ViewPoint(Parent arg0, double arg1, double arg2) {
-		super(arg0, arg1, arg2);
+	public ViewPoint(double width, double height, int index, ArrayList<Prop> props) 
+	{
+		super(new Pane(),width, height);
+		pane = (Pane)getRoot();
+		this.props = new HashMap<String,Prop>();
+		this.IDindex = index;
+		if(props.size()>0){
+			for(Prop p : props)
+			{
+				this.props.put(p.getID(), p);
+			}
+		}
 	}
 	
 
 	private HashMap<Double[], Clickable> locationsToMembers;
 	private int subID;
 	
-	public void Load(){}
-	
-	@Override
-	public void React(){}
-
-	@Override
-	public void React(Prop source) {
-		// TODO Auto-generated method stub
-		
-	}
-		
+	public void Load(){}		
 }
