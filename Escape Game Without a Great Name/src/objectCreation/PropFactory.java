@@ -12,6 +12,7 @@ import java.util.Scanner;
 
 import javafx.scene.Group;
 import roomStructure.ContainerProp;
+import roomStructure.DynamicProp;
 import roomStructure.Prop;
 import roomStructure.Puzzle;
 import roomStructure.Room;
@@ -38,11 +39,11 @@ public class PropFactory {
 		return null;
 	}
 	
-	//factory'te töö juurdelisamine:
+	//meetod proppide sisselugemiseks
 	static HashMap<List<String>, Prop> HashProp() throws Exception{
 		HashMap<List<String>, Prop> Hasher = new HashMap<>();
-		File staticStates = new File("data/Resources/--------------.txt", "UTF-8");
-		BufferedReader bfr = new BufferedReader(new FileReader(staticStates));
+		File props = new File("data/Resources/props.txt", "UTF-8");
+		BufferedReader bfr = new BufferedReader(new FileReader(props));
 		String line;
 		
 		while ((line = bfr.readLine()) != null) {
@@ -51,15 +52,22 @@ public class PropFactory {
 			
 			String[]s_alt = s.split(";");
 			List<String> key = new ArrayList<>(Arrays.asList(s_alt[0],s_alt[2], s_alt[3]));
-			//vigane koht, tuleks luua uus Prop vastavalt sellele, 
-			//kas on static või dynamic, 
-			//uus objekt luua, kuid ma ikka ei saa aru, mis kõik need asjjad on, mida
-			//StaticProp väärtusest tahetakse.
-			Prop prop = new StaticProp(s_alt[0], null, null, null, null, false, false);
-//			String ID, Puzzle puzzle, Puzzle condition, String[] filenamesReversed, 
-//			ContainerProp container, boolean locked, boolean invisible) 
+			Boolean bool1 = Boolean.valueOf(s_alt[2]);
+			Boolean bool2 = Boolean.valueOf(s_alt[3]);
 			
-			Hasher.put(key, prop);
+			if(s_alt[1].equals("static")){
+				
+				Prop prop = new StaticProp(s_alt[0], bool1, bool2);
+				Hasher.put(key, prop);
+			}
+			else if(s_alt[1].equals("dynamic")){
+				//TODO Juta needed to do this part, apparently
+
+			}
+			else if(s_alt[1].equals("container")){
+				Prop prop = new ContainerProp(s_alt[0], bool1, bool2);
+				Hasher.put(key, prop);
+			}		
 		}
 		bfr.close();
 	
